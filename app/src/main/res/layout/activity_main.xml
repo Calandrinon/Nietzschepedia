@@ -22,14 +22,30 @@
 
     <TextView
         android:id="@+id/quoteTextView"
-        android:layout_width="370dp"
-        android:layout_height="502dp"
+        android:layout_width="373dp"
+        android:layout_height="254dp"
         android:fontFamily="@font/cormorant_upright_light"
+        android:gravity="center"
         android:text="@string/selectedQuote"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="30sp"
+        android:textStyle="italic"
         android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.331" />
+
+    <Button
+        android:id="@+id/nextQuoteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="nextQuote"
+        android:text="@string/nextQuoteButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quoteTextView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

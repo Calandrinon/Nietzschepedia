@@ -13,6 +13,7 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
     String[] quotes;
     TextView quoteTextView;
+    int currentQuoteIndex;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,13 +37,24 @@ public class MainActivity extends AppCompatActivity {
         displayRandomQuote();
     }
 
+
     public void displayRandomQuote() {
         Random rand = new Random();
         int random_quote_index = rand.nextInt(this.quotes.length);
+        this.currentQuoteIndex = random_quote_index;
         String quote_with_quotation_marks = "\"" + this.quotes[random_quote_index] + "\"";
         quoteTextView.setText(quote_with_quotation_marks);
+    }
 
-        Toast.makeText(MainActivity.this, quote_with_quotation_marks, Toast.LENGTH_LONG).show();
+
+    public void nextQuote(View view) {
+        currentQuoteIndex++;
+        if (currentQuoteIndex >= quotes.length) {
+            currentQuoteIndex = 0;
+        }
+
+        String quote_with_quotation_marks = "\"" + this.quotes[this.currentQuoteIndex] + "\"";
+        quoteTextView.setText(quote_with_quotation_marks);
     }
 }
 

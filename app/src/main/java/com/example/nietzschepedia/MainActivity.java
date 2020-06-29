@@ -56,5 +56,16 @@ public class MainActivity extends AppCompatActivity {
         String quote_with_quotation_marks = "\"" + this.quotes[this.currentQuoteIndex] + "\"";
         quoteTextView.setText(quote_with_quotation_marks);
     }
+
+
+    public void previousQuote(View view) {
+        currentQuoteIndex--;
+        if (currentQuoteIndex < 0) {
+            currentQuoteIndex = quotes.length - 1;
+        }
+
+        String quote_with_quotation_marks = "\"" + this.quotes[this.currentQuoteIndex] + "\"";
+        quoteTextView.setText(quote_with_quotation_marks);
+    }
 }
 

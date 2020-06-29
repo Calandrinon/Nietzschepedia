@@ -7,6 +7,18 @@
     android:background="#FC0E0E0E"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/previousQuoteButton"
+        android:layout_width="48dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="125dp"
+        android:onClick="previousQuote"
+        android:text="@string/previousQuoteButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="221dp"
@@ -40,12 +52,13 @@
 
     <Button
         android:id="@+id/nextQuoteButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="125dp"
         android:onClick="nextQuote"
         android:text="@string/nextQuoteButton"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/quoteTextView" />
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Nietzschepedia</string>
     <string name="selectedQuote">quote</string>
-    <string name="nextQuoteButton">Next Quote</string>
+    <string name="nextQuoteButton">></string>
+    <string name="previousQuoteButton">&#x3c;</string>
 </resources>

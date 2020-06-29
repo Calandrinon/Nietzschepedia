@@ -2,5 +2,6 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/almendra_display</item>
+        <item>@font/cormorant_upright_light</item>
     </array>
 </resources>

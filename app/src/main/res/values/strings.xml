@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Nietzschepedia</string>
+    <string name="selectedQuote">quote</string>
 </resources>
